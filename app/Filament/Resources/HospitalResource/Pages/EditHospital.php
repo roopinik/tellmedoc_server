@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Filament\Resources\HospitalResource\Pages;
+
+use App\Filament\Resources\HospitalResource;
+use Filament\Actions;
+use Filament\Resources\Pages\EditRecord;
+
+class EditHospital extends EditRecord
+{
+    use EditRecord\Concerns\Translatable;
+    protected static string $resource = HospitalResource::class;
+
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\DeleteAction::make(),
+            Actions\LocaleSwitcher::make(),
+        ];
+    }
+}
