@@ -1,0 +1,12 @@
+name: telmedoc
+recipe: laravel
+excludes:
+  - vendor
+config:
+  webroot: public
+  via: nginx
+  xdebug: false
+  php: "8.2"
+services:
+  phpmyadmin:
+    type: phpmyadmin

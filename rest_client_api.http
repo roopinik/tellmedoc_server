@@ -1,0 +1,335 @@
+@token = 60|LfKFU7T5QTEfzVZCXdNoH2qJp0qD6fIYJalrjlCV4c4601de
+@baseurl = https://c117-152-58-193-105.ngrok-free.app/api/client
+
+###
+POST {{baseurl}}/generate/token
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email":"sankethp@codebliss.in",
+    "password":"password123"
+}
+
+###
+POST {{baseurl}}/get/appointments?count=10&page=0&date_query=tommorow
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+
+###
+POST {{baseurl}}/get/doctors?search=vin
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "email":"aryan@codebliss.in",
+    "password":"stranger"
+}
+
+
+###
+POST {{baseurl}}/get/appointments/count
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "email":"aryan@codebliss.in",
+    "password":"stranger"
+}
+
+###
+POST {{baseurl}}/toggle/completed
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "uuid":"475d7c67-c49d-4606-b5ad-98209d6da9fa",
+    "value":true
+}
+
+###
+POST {{baseurl}}/toggle/doctor/leave
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "id":4
+    "value":true
+}
+
+###
+POST {{baseurl}}/user/me
+Content-Type: application/json
+Accept: application/json
+# Authorization: Bearer {{token}}
+
+{
+    "uuid":"475d7c67-c49d-4606-b5ad-98209d6da9fa",
+    "value":true
+}
+
+###
+POST {{baseurl}}/doctor/available/dates
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "doctor_id":3,
+    "hospital_id":1
+}
+
+###
+POST {{baseurl}}/doctor/available/timeslots
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "doctor_id":3,
+    "date":"2025-02-23"
+}
+
+###
+POST {{baseurl}}/doctor/available/timeranges
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "doctor_id":3,
+    "date":"2025-02-23",
+    "hospital_id":1
+}
+
+###
+POST {{baseurl}}/fetch/upcoming/leaves
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+
+
+###
+POST {{baseurl}}/create/leave
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "leave_start":"2024-10-06 03:30:00",
+    "leave_end":"2024-10-8 03:30:00",
+    "reason":"attend marriage"
+}
+
+
+###
+POST {{baseurl}}/save/appointment
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "patient_name": "asdas",
+    "contact_number": "9902233232",
+    "doctor_id": 3, "appointment_date":
+    "2024-10-14", "appointment_time": "19:00",
+    "is_new": "no",
+    "appointment_id": 163
+}
+
+
+###
+POST {{baseurl}}/toggle/doctor/leave
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "id":4,
+    "value":false
+}
+
+###
+POST {{baseurl}}/cancel/appointment
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "uuid":"d5d53c79-914a-44d6-8e37-7decfa523f5f",
+    "value":true
+}
+
+###
+POST {{baseurl}}/followup/create
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+   "appointment_id":195,
+   "date":"2024-12-25"
+}
+
+###
+POST {{baseurl}}/followup/create
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "appointment_id":"new",
+   "patient_name":"Faheem",
+   "mobile_number":"919902233232",
+   "date":"2024-12-25"
+}
+
+###
+
+GET {{baseurl}}/fetch/followups
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+GET {{baseurl}}/get/doctors/filter
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+
+###
+GET {{baseurl}}/get/hospitals/filter
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+GET {{baseurl}}/get/timerange/filter/3
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+POST {{baseurl}}/save/appointment
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "patientname": "asdas",
+    "mobile": "9902233232",
+    "doctor": 3,
+    "date":"2025-02-14",
+    "time": "07:00 PM - 07:30 PM",
+    "healthcareid":1,
+    "appointment_id": null
+}
+
+###
+POST {{baseurl}}/create/token
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+   "appointment_id":86
+}
+
+
+###
+
+###
+POST {{baseurl}}/update/status
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+   "appointment_id":86
+}
+
+
+
+###
+
+POST https://live.codebliss.in/create/collection
+Content-Type: application/json
+Accept: application/json
+Authorization: qDaopWq4CljXTJ4qXIebJabYa98pks8K0BPyaIeryrGM3QXblYmQrYSYGMo7yvOl
+
+{
+    "collection_name":"client_id_3",
+    "fields":[
+        {
+          "name": "appointment_date",
+          "type": "text",
+          "required": true,
+          "max": 12
+        },
+        {
+          "name": "status",
+          "type": "text",
+          "required": true,
+          "max": 20
+        },
+        {
+          "name": "token",
+          "type": "number",
+          "required": true,
+          "max": 1000
+        },
+        {
+          "name": "hospital_id",
+          "type": "number",
+          "required": true,
+          "max": 10000
+        },
+        {
+          "name": "doctor_id",
+          "type": "number",
+          "required": true,
+          "max": 10000
+        }
+      ]
+}
+
+###
+POST https://live.codebliss.in/create/record
+Content-Type: application/json
+Accept: application/json
+Authorization: qDaopWq4CljXTJ4qXIebJabYa98pks8K0BPyaIeryrGM3QXblYmQrYSYGMo7yvOl
+
+{
+    "collection_name":"client_id_3",
+    "data":{
+        "doctor_id":3,
+        "hospital_id":2,
+        "status":"Completed",
+        "appointment_date":"2025-02-18",
+        "token":23
+    }
+}
+
+###
+POST {{baseurl}}/get/flow/appointment
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "hospital_id":1
+}
+
+###
+POST {{baseurl}}/fetch/weekly/timeranges
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}

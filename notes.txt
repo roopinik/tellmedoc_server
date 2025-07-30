@@ -1,0 +1,5 @@
+* test check waitlist button feature
+* 
+* add templates generation feature
+* add auto flow feature
+* after all above is complete enable notification through whatsapp feature

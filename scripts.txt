@@ -1,0 +1,2 @@
+php artisan make:filament-resource Client --soft-deletes --generate
+

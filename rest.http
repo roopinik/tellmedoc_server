@@ -1,0 +1,197 @@
+@token = 18|mwx015fev6YvXFkCPixlARMoxnsL8DPMUKHDjZEC4b1b6e54"
+@baseurl = https://telmedoc-server.test/api/client
+
+###
+POST {{baseurl}}/check/mobile
+Content-Type: application/json
+Accept: application/json
+# Authorization: Bearer {{token}}
+
+{
+    "mobile":"22332",
+    "client_id":"1"
+}
+
+###
+POST {{baseurl}}/generate/token
+Content-Type: application/json
+Accept: application/json
+# Authorization: Bearer {{token}}
+
+{
+    "mobile":"22332",
+    "otp":"734728"
+}
+
+###
+GET {{baseurl}}/healthcare/configuration/1
+Content-Type: application/json
+
+###
+GET {{baseurl}}/lab/reports
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+
+GET {{baseurl}}/get/doctors
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+GET {{baseurl}}/get/accounts
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+POST {{baseurl}}/create/person
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+
+
+{"name":"Faheem","gender":"male","mrn":"","abha_id":"","date_of_birth": "2024-03-27","is_primary":false}
+
+###
+Get {{baseurl}}/doctor/availabledays/online/3
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+post {{baseurl}}/get/doctor/availableslots/3/online/Monday/2024-04-01
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+post {{baseurl}}/create/appointment
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+"selectedSlot" : "12:45",
+"selectedDate" : "2024-04-01",
+"selectedPatient" : 4,
+"otherPatient" : false,
+"otherPatientName" : "",
+"type" : "online",
+"doctor" : "3"
+}
+
+
+###
+
+post {{baseurl}}/create/payment/session
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "id":3,
+    "type":"online_appointment"
+}
+
+###
+post {{baseurl}}/verify/payment
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+    "order_id":"ORD11"
+}
+
+###
+POST {{baseurl}}/document/file/upload HTTP/1.1
+Accept: application/json
+Content-Type: multipart/form-data; boundary=MyBoundary
+Authorization: Bearer {{token}}
+
+--MyBoundary
+Content-Disposition: form-data; name="file"; filename="1.png"
+Content-Type: application/octet-stream
+
+< .\my-file.png
+--MyBoundary
+Content-Disposition: form-data; name="ProspectId"
+
+1
+--MyBoundary
+
+###s
+POST {{baseurl}}/document/save
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "title":"Blood Test",
+    "description":"test descriotion",
+    "user":4,
+    "documents":[
+        {"id":"f9ee3727-36a9-4dce-8ea3-d1c25ca3d88f.png","deleted":false},
+        {"id":"69ab7fe8-c7a6-4751-9d35-f5f81a0288b0.pdf","deleted":false}
+    ]
+}
+###
+GET {{baseurl}}/get/appointments?page=1&status=All&date_query=today
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+###
+POST {{baseurl}}/user/appointment/checkin/4
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+###
+
+GET {{baseurl}}/get/dotor/checkins
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+
+// WhatsApp Appointment Api's .
+###
+POST https://secureforms.codebliss.in/wa/actions/4321bbaf-e290-4177-80e6-3a1c54931a1a
+Content-Type: application/json
+Accept: application/json
+
+{
+    "whatsapp_number":"919902233232",
+    "vendor_uid":"90f3e1a0-866c-483a-8072-47dfe5eb782c",
+    "action":"hi"
+}
+
+###
+POST https://telmedoc.test/wa/create/appointment/92aee17a-e7d4-42b7-835e-807a3a0c5941
+Content-Type: application/json
+Accept: application/json
+
+{
+    "whatsapp_number":"9902233232",
+    "vendor_uid":"92aee17a-e7d4-42b7-835e-807a3a0c5941"
+}
+
+
+// WhatsApp Appointment Api's .
+###
+POST https://sarjiwebsite.codebliss.in/api/submit-webform
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name":"919902233232",
+    "phone_number":"919902233232",
+    "email":"3",
+    "place":"Shimoga"
+}

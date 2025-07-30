@@ -1,0 +1,44 @@
+https://telmedoc.com/rpay/appointment/callback/?
+razorpay_payment_id=pay_OZKb519NDz3yRk&
+razorpay_payment_link_id=plink_OZKZN91LSzWYXC&
+razorpay_payment_link_reference_id=REFDOCAPP1&
+razorpay_payment_link_status=paid&
+razorpay_signature=e96112e0aa6d71b7b74f808ae0bf7495057716099446999b63f6361407316216
+{
+    "accept_partial": false,
+    "amount": 258,
+    "amount_paid": 0,
+    "callback_method": "get",
+    "callback_url": "https://telmedoc.com/rpay/appointment/callback/",
+    "cancelled_at": 0,
+    "created_at": 1721138822,
+    "currency": "INR",
+    "customer": {
+      "contact": "9902233232",
+      "email": "faheempmh@gmail.com",
+      "name": "Test From India Banglore"
+    },
+    "description": "Booking for appointment Sajeevini Health Care",
+    "expire_by": 1721142421,
+    "expired_at": 0,
+    "first_min_partial_amount": 0,
+    "id": "plink_OZKZN91LSzWYXC",
+    "notes": {
+      "appointment_id": "1"
+    },
+    "notify": {
+      "email": false,
+      "sms": false,
+      "whatsapp": false
+    },
+    "payments": null,
+    "reference_id": "REFDOCAPP1",
+    "reminder_enable": false,
+    "reminders": [],
+    "short_url": "https://rzp.io/i/b2BFbMmo",
+    "status": "created",
+    "updated_at": 1721138822,
+    "upi_link": false,
+    "user_id": "",
+    "whatsapp_link": false
+  }

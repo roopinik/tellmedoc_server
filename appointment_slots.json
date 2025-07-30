@@ -1,0 +1,338 @@
+[
+    {
+      "endTime": "13:00:00",
+      "weekDay": "Monday",
+      "hospital": "1",
+      "slot_type": "morning",
+      "startTime": "11:00:00",
+      "timerange": "10:00 AM - 10:30 AM"
+    },
+    {
+      "endTime": "23:00:00",
+      "weekDay": "Monday",
+      "hospital": "1",
+      "slot_type": "morning",
+      "startTime": "16:00:00",
+      "timerange": "10:30 AM - 11:00 AM"
+    },
+    {
+      "endTime": "13:00:00",
+      "weekDay": "Monday",
+      "hospital": "1",
+      "slot_type": "morning",
+      "startTime": "10:00:00",
+      "timerange": "11:00 AM - 11:30 AM"
+    },
+    {
+      "endTime": "19:00:00",
+      "weekDay": "Monday",
+      "hospital": "1",
+      "slot_type": "morning",
+      "startTime": "16:00:00",
+      "timerange": "11:30 AM - 12:00 AM"
+    },
+    {
+      "endTime": "13:00:00",
+      "weekDay": "Monday",
+      "hospital": "1",
+      "slot_type": "morning",
+      "startTime": "11:00:00",
+      "timerange": "12:00 PM - 12:30 PM"
+    },
+    {
+      "endTime": "19:00:00",
+      "weekDay": "Monday",
+      "hospital": "1",
+      "slot_type": "morning",
+      "startTime": "06:00:00",
+      "timerange": "12:30 PM - 1:00 PM"
+    },
+    {
+      "weekDay": "Monday",
+      "hospital": "1",
+      "slot_type": "evening",
+      "timerange": "6:00 PM - 6:30 PM"
+    },
+    {
+      "weekDay": "Monday",
+      "hospital": "1",
+      "slot_type": "evening",
+      "timerange": "6:30 PM - 7:00 PM"
+    },
+    {
+      "weekDay": "Monday",
+      "hospital": "1",
+      "slot_type": "evening",
+      "timerange": "7:00 PM - 7:30 PM"
+    },
+    {
+      "weekDay": "Monday",
+      "hospital": "1",
+      "slot_type": "evening",
+      "timerange": "7:30 PM - 8:00 PM"
+    },
+    {
+      "weekDay": "Monday",
+      "hospital": "1",
+      "slot_type": "evening",
+      "timerange": "8:00 PM - 8:30 PM"
+    },
+    {
+      "weekDay": "Monday",
+      "hospital": "1",
+      "slot_type": "evening",
+      "timerange": "8:30 PM - 9:00 PM"
+    },
+    {
+        "endTime": "13:00:00",
+        "weekDay": "Wednesday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "11:00:00",
+        "timerange": "10:00 AM - 10:30 AM"
+      },
+      {
+        "endTime": "23:00:00",
+        "weekDay": "Wednesday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "16:00:00",
+        "timerange": "10:30 AM - 11:00 AM"
+      },
+      {
+        "endTime": "13:00:00",
+        "weekDay": "Wednesday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "10:00:00",
+        "timerange": "11:00 AM - 11:30 AM"
+      },
+      {
+        "endTime": "19:00:00",
+        "weekDay": "Wednesday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "16:00:00",
+        "timerange": "11:30 AM - 12:00 AM"
+      },
+      {
+        "endTime": "13:00:00",
+        "weekDay": "Wednesday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "11:00:00",
+        "timerange": "12:00 PM - 12:30 PM"
+      },
+      {
+        "endTime": "19:00:00",
+        "weekDay": "Wednesday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "06:00:00",
+        "timerange": "12:30 PM - 1:00 PM"
+      },
+      {
+        "weekDay": "Wednesday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "6:00 PM - 6:30 PM"
+      },
+      {
+        "weekDay": "Wednesday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "6:30 PM - 7:00 PM"
+      },
+      {
+        "weekDay": "Wednesday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "7:00 PM - 7:30 PM"
+      },
+      {
+        "weekDay": "Wednesday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "7:30 PM - 8:00 PM"
+      },
+      {
+        "weekDay": "Wednesday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "8:00 PM - 8:30 PM"
+      },
+      {
+        "weekDay": "Wednesday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "8:30 PM - 9:00 PM"
+      },
+      {
+        "endTime": "13:00:00",
+        "weekDay": "Friday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "11:00:00",
+        "timerange": "10:00 AM - 10:30 AM"
+      },
+      {
+        "endTime": "23:00:00",
+        "weekDay": "Friday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "16:00:00",
+        "timerange": "10:30 AM - 11:00 AM"
+      },
+      {
+        "endTime": "13:00:00",
+        "weekDay": "Friday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "10:00:00",
+        "timerange": "11:00 AM - 11:30 AM"
+      },
+      {
+        "endTime": "19:00:00",
+        "weekDay": "Friday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "16:00:00",
+        "timerange": "11:30 AM - 12:00 AM"
+      },
+      {
+        "endTime": "13:00:00",
+        "weekDay": "Friday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "11:00:00",
+        "timerange": "12:00 PM - 12:30 PM"
+      },
+      {
+        "endTime": "19:00:00",
+        "weekDay": "Friday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "06:00:00",
+        "timerange": "12:30 PM - 1:00 PM"
+      },
+      {
+        "weekDay": "Friday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "6:00 PM - 6:30 PM"
+      },
+      {
+        "weekDay": "Friday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "6:30 PM - 7:00 PM"
+      },
+      {
+        "weekDay": "Friday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "7:00 PM - 7:30 PM"
+      },
+      {
+        "weekDay": "Friday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "7:30 PM - 8:00 PM"
+      },
+      {
+        "weekDay": "Friday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "8:00 PM - 8:30 PM"
+      },
+      {
+        "weekDay": "Friday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "8:30 PM - 9:00 PM"
+      },
+      {
+        "endTime": "13:00:00",
+        "weekDay": "Saturday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "11:00:00",
+        "timerange": "10:00 AM - 10:30 AM"
+      },
+      {
+        "endTime": "23:00:00",
+        "weekDay": "Saturday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "16:00:00",
+        "timerange": "10:30 AM - 11:00 AM"
+      },
+      {
+        "endTime": "13:00:00",
+        "weekDay": "Saturday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "10:00:00",
+        "timerange": "11:00 AM - 11:30 AM"
+      },
+      {
+        "endTime": "19:00:00",
+        "weekDay": "Saturday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "16:00:00",
+        "timerange": "11:30 AM - 12:00 AM"
+      },
+      {
+        "endTime": "13:00:00",
+        "weekDay": "Saturday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "11:00:00",
+        "timerange": "12:00 PM - 12:30 PM"
+      },
+      {
+        "endTime": "19:00:00",
+        "weekDay": "Saturday",
+        "hospital": "1",
+        "slot_type": "morning",
+        "startTime": "06:00:00",
+        "timerange": "12:30 PM - 1:00 PM"
+      },
+      {
+        "weekDay": "Saturday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "6:00 PM - 6:30 PM"
+      },
+      {
+        "weekDay": "Saturday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "6:30 PM - 7:00 PM"
+      },
+      {
+        "weekDay": "Saturday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "7:00 PM - 7:30 PM"
+      },
+      {
+        "weekDay": "Saturday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "7:30 PM - 8:00 PM"
+      },
+      {
+        "weekDay": "Saturday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "8:00 PM - 8:30 PM"
+      },
+      {
+        "weekDay": "Saturday",
+        "hospital": "1",
+        "slot_type": "evening",
+        "timerange": "8:30 PM - 9:00 PM"
+      }
+  ]

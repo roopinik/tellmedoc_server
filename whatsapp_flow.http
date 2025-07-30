@@ -1,0 +1,66 @@
+@token = EAAEWyo8ZCG48BO1wEG5lo2flCUmNtj9KgtFxLzBZAkFPJVw2vQDT1mok2rLIrw60vjh4MHusi4ZA1rTlVscG7fMDOPqEku4ZA5pOy9nwYtpcUymWL0cgvZASMWACEwI7BAjmezhmRZAUZAtSWyAu2wsqnz2Ff1tCZC89kag4rM8VGqXmfZAhgXvcIJw6aeSPItnuIFwZDZD
+@baseurl = "http://telmedoc-server.test"
+
+
+###
+GET https://graph.facebook.com/v22.0/323349664201445/phone_numbers
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+
+###
+GET https://graph.facebook.com/v22.0/340207505844688/whatsapp_business_encryption
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+# {
+#     "mobile":"22332",
+#     "client_id":"1"
+# }
+
+###
+POST https://graph.facebook.com/v22.0/340207505844688/whatsapp_business_encryption
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+Authorization: Bearer {{token}}
+
+business_public_key='-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA7IJBNereIC8ZlPN0V2mL
+jFGANs49Pe4EGWuSY+dS6eGS+QmdKSnRV/v8HQsuXlpMEfp0/6KwNkna54eAy/MZ
+tBXgbboB21brxGdwVPwiaAlJHYaJMDn8GfItbpV4u7jD3AX/uacoO2HbJc91Bk9Q
+y2Wx8BX9dsJ9/bbnjyr6mjNaq+EMdPDD2T41phNDpuRo49IV0H6VoRPK2vPXtdEx
+jxwapKc0zFJToiAnCu/Ygb3j+IqXCrXAQIkIeaYcrEQDkZOL3XkB0ttKdWsMb0Oa
+Q5ks0rM/Y1deuk5BQY2Ss+pEdNX8W2hdamSJkX+LL3VtzueOr4I+XkqfwPZPxczY
+ZwIDAQAB
+-----END PUBLIC KEY-----'
+
+// set prior default public key
+###
+POST https://graph.facebook.com/v22.0/340207505844688/whatsapp_business_encryption
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+Authorization: Bearer {{token}}
+
+business_public_key=-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyMq6lTYLeYXyzq+HN9AN\nRaNpbOVKScM5RC13RZYELfEwtiskMarnQ4646K7ISSeLn4g73b68nT9MsUTnosUo\nin77iVS8C4iE1kq2NhaPKua5K6oBvHy37+H+m1y07zUOfSKEKsFmkIkgmvU8GHjD\nzRbHZ9n7lj98wItg+P8daKjVEByLX5OudZRpC40JkDdMEdkqXWWoUYNhMd8A\/D0A\n+Obtds9PmPHwZJEvEpmBDXRABCfb5CYJUsNYc4vVZqav+ssy7IbVFIe7t8+uNclf\nhtggqrYpLrhR9gWL3OKguH1973KBqWkuUdX4bRWic39HvQi8nJ1zqW92CrM9b5Yx\n4QIDAQAB\n-----END PUBLIC KEY-----
+
+
+// set flow endpoint url
+
+###
+POST https://graph.facebook.com/v22.0/1356567778876593
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
+
+{
+     "endpoint_uri": "https://app.telmedoc.com/flowjs/92aee17a-e7d4-42b7-835e-807a3a0c5941"
+}
+
+
+###
+
+POST https://app.telmedoc.com/flowjs/flow/1/en
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer {{token}}
